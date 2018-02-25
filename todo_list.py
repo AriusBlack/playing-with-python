@@ -12,7 +12,7 @@ def print_list():
 def print_help():
     print("enter 'DONE' to exit program
 enter 'SHOW' to see the items currently on your shopping list
-enter 'HELP' to see what special commands are available\n")
+enter 'HELP' to see what special commands are available")
 
 while True:
     new_item = input("> ")
