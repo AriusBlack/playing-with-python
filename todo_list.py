@@ -9,15 +9,17 @@ def print_list():
     for item in todo_list:
         print(item)
 
+def print_help():
+    print("enter 'DONE' to exit program
+enter 'SHOW' to see the items currently on your shopping list
+enter 'HELP' to see what special commands are available")
 
 while True:
     new_item = input("> ")
 if new_item == 'DONE':
     break
 elif new_item == 'HELP':
-    print("enter 'DONE' to exit program \n ")
-    print("enter 'SHOW' to see the items currently on your shopping list\n")
-    print("enter 'HELP' to see what special commands are available\n")
+    print_help()
 elif new_item == 'SHOW':
     print_list()
 elif new_item != 'DONE':
