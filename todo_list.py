@@ -26,6 +26,7 @@ while True:
         break
     elif new_item == 'SHOW':
         print_list()
-    todo_list.append(new_item)
+    elif new_item != 'SHOW''HELP''DONE':
+        todo_list.append(new_item)
 
 print_list()
