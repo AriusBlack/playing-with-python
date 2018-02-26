@@ -1,7 +1,6 @@
 
 todo_list = []
 print("What are we working on today?")
-print("enter 'DONE' to stop adding items.")
 
 
 def print_help():
@@ -19,14 +18,20 @@ def print_list():
 print_help()
 
 while True:
-    new_item = input("> ")
-    if new_item == 'HELP':
-        print_help()
-    elif new_item == 'DONE':
-        break
-    elif new_item == 'SHOW':
-        print_list()
-    elif new_item != 'SHOW''HELP''DONE':
-        todo_list.append(new_item)
-
+    try:
+        new_item = input("> ")
+        if new_item == 'HELP':
+            print_help()
+        elif new_item == 'DONE':
+            break
+        elif new_item == 'SHOW':
+            print_list()
+        elif new_item != 'SHOW''HELP''DONE':
+            todo_list.append(new_item)
+    except NameError:
+        pass
+        print("Not the right format")
+    except SyntaxError:
+        pass
+        print("Remember to open your entry with ' and close with '")
 print_list()
