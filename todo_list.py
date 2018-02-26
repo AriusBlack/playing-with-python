@@ -1,3 +1,4 @@
+
 todo_list = []
 print("What are we working on today?")
 print("enter 'DONE' to stop adding items.")
@@ -19,10 +20,10 @@ print_help()
 
 while True:
     new_item = input("> ")
-    if new_item == 'DONE':
-        break
-    elif new_item == 'HELP':
+    if new_item == 'HELP':
         print_help()
+    elif new_item == 'DONE':
+        break
     elif new_item == 'SHOW':
         print_list()
     todo_list.append(new_item)
