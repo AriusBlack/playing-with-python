@@ -16,3 +16,6 @@ def print_lines():
     print("You can go to /
     line1 /
     line2 / line3 / etc...")
+
+I added some exception handling and learned how to do that. Cool.
+I was wondering if you could add several exceptions to a pass but realized that would be a bad idea as you would be able to identify which exception was caught.
