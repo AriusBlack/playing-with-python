@@ -1,7 +1,6 @@
 
 todo_list = []
 print("What are we working on today?")
-print("enter 'DONE' to stop adding items.")
 
 
 def print_help():
@@ -19,7 +18,10 @@ def print_list():
 print_help()
 
 while True:
-    new_item = input("> ")
+#    try:    THIS IS NOT WORKING, I'm back to the same problem as with the original break. It can't seem to access the new_item creation
+#        new_item = input("> ")
+#    except NameError:
+#        print("Not the right format")
     if new_item == 'HELP':
         print_help()
     elif new_item == 'DONE':
