@@ -1,4 +1,4 @@
-
+# Need to catch the error on first guess without ''. Throws an UnboundLocalError.
 guesses = []
 max_tries = 7
 word = "oregon"
